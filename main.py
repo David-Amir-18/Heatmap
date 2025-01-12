@@ -1,5 +1,5 @@
 # Import necessary libraries
-import cv2
+import cv2 # main tracking library
 import numpy as np
 import matplotlib.pyplot as plt
 from ultralytics import YOLO
@@ -18,7 +18,7 @@ if not video.isOpened():
     print("Error: Could not open video.")
     exit()
 
-# Read the first few frames for manual player selection
+# Read the first few frames for manual player selection#
 frames = []
 for _ in range(6):
     ret, frame = video.read()
